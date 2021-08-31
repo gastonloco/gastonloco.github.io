@@ -1,0 +1,96 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+*
+{
+    box-sizing: border-box;
+}
+nav a
+{
+    margin-left: 7.5;
+    margin-right: 7.5;
+}
+
+.contenedor
+{
+width: 100%;
+padding: 15px;
+}
+.formulario
+{
+    background: rgb(225, 162, 238);
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color:blueviolet;
+    font-size: 40px;
+}
+
+imput[type="text"],
+imput[type="password"]
+{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.contenedor1
+{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icono
+{
+    min-width: 50px;
+    text-align: center;
+    color:aqua;    
+}
+.button
+{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: blueviolet;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background: cadetblue;
+}
+p
+{
+    text-align: center;
+}
+.link
+{
+    text-decoration: none;
+    color:blue;
+    font-weight: 600;
+}
+
+.link:hover
+{
+    color: cadetblue;
+}
+
+@media(min-width:768px)
+{
+    .formulario
+    {
+    margin: auto;
+    width: 500px;
+    margin-top: 100px;
+    border-radius: 3px;
+    }
+}
