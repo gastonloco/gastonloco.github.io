@@ -1,96 +1,140 @@
 body
-{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    background: url(../img/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        background: url(../img/fondo.jpg);
+        background-size: cover;
+        background-attachment: fixed;/*dejo la imagen fija*/
+    }
 *
-{
-    box-sizing: border-box;
-}
-nav a
-{
-    margin-left: 7.5;
-    margin-right: 7.5;
-}
-
+    {
+        box-sizing: border-box;
+    }
+.encabezado
+    {
+        background: rgb(225, 162, 238);
+    }
+.encabezado .menu
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /*padding: 10px;*/
+    }
+.encabezado .menu ul
+    {
+        list-style: none; /*sacar los puntos de las viñetas*/
+        display: flex;/* deja uno al lado del otro en forma horizontal*/
+        justify-content: space-between;
+    }
+.encabezado .menu ul li ul
+    {
+        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+        flex-direction: column;/* deja en forma vertical los sub item*/
+        position: absolute; /*esto es para sacar los sub menu fuera del header*/
+        background: rgb(225, 162, 238);
+        display: none; /*hago desaparecer el sub item*/
+    }
+.encabezado .menu ul li:hover >ul
+    { /* cada vez que pase el curso por el padre
+                                        aparezaca el hijo*/
+        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+        flex-direction: column;/* deja en forma vertical los sub item*/
+        position: absolute; /*esto es para sacar los sub menu fuera del header*/
+        background: rgb(225, 162, 238);
+    }
+.encabezado .menu ul li ul li
+    {
+        width: 180px; /* hacemos crecer el ancho de los sub item*/
+    }
+a
+    {
+        text-decoration: none; /*Sacar el subrrallado de las etiquetas*/
+        font-size: 20px;
+        color: blueviolet;
+        padding: 12px 20px;
+        display: block; /*es para que no se superpongan los sub item*/
+    }
+a:hover
+    {
+        color: #fff;
+    }
 .contenedor
-{
-width: 100%;
-padding: 15px;
-}
+    {
+        width: 100%;
+        padding: 15px;
+    }
 .formulario
-{
-    background: rgb(225, 162, 238);
-    margin-top: 150px;
-    padding: 3px;
-}
-h1{
-    text-align: center;
-    color:blueviolet;
-    font-size: 40px;
-}
-
+    {
+        background: rgb(225, 162, 238);
+        margin-top: 150px;
+        padding: 3px;
+    }
+h1
+    {
+        text-align: center;
+        color:blueviolet;
+        font-size: 40px;
+    }
 imput[type="text"],
 imput[type="password"]
-{
-    font-size: 20px;
-    width: 82%;
-    padding: 10px;
-    border: none;
-}
-.contenedor1
-{
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
-}
-.icono
-{
-    min-width: 50px;
-    text-align: center;
-    color:aqua;    
-}
-.button
-{
-    border: none;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    background: blueviolet;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover
-{
-    background: cadetblue;
-}
-p
-{
-    text-align: center;
-}
-.link
-{
-    text-decoration: none;
-    color:blue;
-    font-weight: 600;
-}
-
-.link:hover
-{
-    color: cadetblue;
-}
-
-@media(min-width:768px)
-{
-    .formulario
     {
-    margin: auto;
-    width: 500px;
-    margin-top: 100px;
-    border-radius: 3px;
+        font-size: 20px;
+        width: 82%;
+        padding: 10px;
+        border: none;
     }
-}
+.contenedor1
+    {
+        margin-bottom: 15px;
+        border: 1px solid #aaa;
+    }
+.icono
+    {
+        min-width: 50px;
+        text-align: center;
+        color:aqua;    
+    }
+.button
+    {
+        border: none;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        background: blueviolet;
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+.button:hover
+    {
+        background: cadetblue;
+    }
+p
+    {
+        text-align: center;
+    }
+.link
+    {
+        text-decoration: none;
+        color:blue;
+        font-weight: 600;
+    }
+.link:hover
+    {
+        color: cadetblue;
+    }
+.cuadrado
+    {
+        border-radius: 5px;   
+    }
+@media(min-width:768px)
+    {
+        .formulario
+        {
+        margin: auto;
+        width: 500px;
+        margin-top: 100px;
+        border-radius: 3px;
+        }
+    }
