@@ -10,6 +10,9 @@ body
     {
         box-sizing: border-box;
     }
+footer{
+    background: rgb(225, 162, 238);
+}
 .encabezado
     {
         background: rgb(225, 162, 238);
@@ -63,12 +66,14 @@ a:hover
     {
         width: 100%;
         padding: 15px;
+       
     }
 .formulario
     {
         background: rgb(225, 162, 238);
         margin-top: 150px;
         padding: 3px;
+        text-align: center; /*centro los txtbox */
     }
 h1
     {
