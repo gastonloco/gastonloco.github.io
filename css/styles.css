@@ -9,13 +9,13 @@ body
 *
     {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-footer{
-    background: rgb(225, 162, 238);
-}
 .encabezado
     {
-        background: rgb(225, 162, 238);
+        background: rgba(0,0,0,.6);
+       
     }
 .encabezado .menu
     {
@@ -35,7 +35,7 @@ footer{
         display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
         flex-direction: column;/* deja en forma vertical los sub item*/
         position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgb(225, 162, 238);
+        background: rgb(243, 205, 36);
         display: none; /*hago desaparecer el sub item*/
     }
 .encabezado .menu ul li:hover >ul
@@ -44,7 +44,7 @@ footer{
         display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
         flex-direction: column;/* deja en forma vertical los sub item*/
         position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgb(225, 162, 238);
+        background: rgba(245, 143, 10,.6);   
     }
 .encabezado .menu ul li ul li
     {
@@ -54,7 +54,7 @@ a
     {
         text-decoration: none; /*Sacar el subrrallado de las etiquetas*/
         font-size: 20px;
-        color: blueviolet;
+        color: rgb(243, 205, 36);
         padding: 12px 20px;
         display: block; /*es para que no se superpongan los sub item*/
     }
@@ -70,16 +70,20 @@ a:hover
     }
 .formulario
     {
-        background: rgb(225, 162, 238);
+        background: rgba(0,0,0,.6);
         margin-top: 150px;
         padding: 3px;
         text-align: center; /*centro los txtbox */
     }
+.formulario p
+    {
+    color: #fff;
+    }
 h1
     {
         text-align: center;
-        color:blueviolet;
-        font-size: 40px;
+        color:rgb(243, 205, 36);
+        font-size: 25px;
     }
 imput[type="text"],
 imput[type="password"]
@@ -88,17 +92,19 @@ imput[type="password"]
         width: 82%;
         padding: 10px;
         border: none;
+        
     }
 .contenedor1
     {
         margin-bottom: 15px;
-        border: 1px solid #aaa;
+        /*border: 1px solid rgba(0,0,0,.3);*/
+       /*background: rgba(0,0,0,.3);*/
     }
 .icono
     {
         min-width: 50px;
         text-align: center;
-        color:aqua;    
+        color:rgba(245, 143, 10,.6);   
     }
 .button
     {
@@ -106,14 +112,15 @@ imput[type="password"]
         width: 100%;
         color: white;
         font-size: 20px;
-        background: blueviolet;
+        background: rgba(245, 143, 10,.6);
         padding: 15px 20px;
         border-radius: 5px;
         cursor: pointer;
     }
 .button:hover
     {
-        background: cadetblue;
+        color: rgb(0, 0, 0);
+        background: rgba(255, 255, 255, 0.6);
     }
 p
     {
@@ -122,16 +129,22 @@ p
 .link
     {
         text-decoration: none;
-        color:blue;
+        color: rgb(243, 205, 36);
         font-weight: 600;
     }
 .link:hover
     {
-        color: cadetblue;
+        
+        color:rgb(255, 255, 255);
+
     }
 .cuadrado
     {
-        border-radius: 5px;   
+        border-radius: 5px; 
+        color:rgb(255, 255, 255);  
+        background: rgba(245, 143, 10,.6);
+        border: none;   /*  elimino los bordes visibles del textbox*/
+        padding: 10px; /*le damos el ancho de los textbox*/
     }
 @media(min-width:768px)
     {
@@ -142,4 +155,71 @@ p
         margin-top: 100px;
         border-radius: 3px;
         }
+    }
+
+    /*******************footer*****************/
+    footer{
+        background: rgba(0,0,0,.6);
+        width: 100%;
+
+    }
+    .contenedor-all{
+        width: 100%;
+        max-width: 1281px; /* es el ancho del contenedor*/
+        margin: auto;
+        /* para que siempre esta centrado */
+    }
+    .contenedor-footer
+    {
+        justify-content: space-between;
+        display: flex; /* esto hace que deje de ser en block*/
+        align-items: center;
+        
+    }
+    .columna1
+    {
+       max-width: 427px; /* divido en tres */
+    }
+    .columna1 p
+    {
+       color: rgba(245, 143, 10,.6);
+    }
+    .columna2
+    {
+       max-width: 427px; /* divido en tres */
+    }
+    .columna2 label
+    {
+        color: rgba(245, 143, 10,.6);
+    }
+    .columna3 
+    {
+       max-width: 427px; /* divido en tres */
+    }
+    .columna3 p
+    {
+        color: rgba(245, 143, 10,.6);
+    }
+    .conteiner-footer2{
+        display: flex; /* esto hace que deje de ser en block*/
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copyright{
+        max-width: 427px; /* divido en tres */
+        color: rgba(245, 143, 10,.6);
+    }
+
+    .information{
+        max-width: 854px; /* divido en tres */
+        display: flex; /* esto hace que deje de ser en block*/
+    }
+    .logo{
+        display: flex; /* esto hace que deje de ser en block*/
+        margin-top: 20px;
+    }
+    .logo img{
+        width: 36px;
+        height: 36px;
     }
