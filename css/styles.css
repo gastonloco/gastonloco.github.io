@@ -98,13 +98,39 @@ footer h3
     font-size: 15px;
     text-align:right;
 }
-#fontawesome
+#fontawesome1-1
 {
     color:rgba(243, 205, 36,.6); 
     font-size: 25px;
     padding-right: 10px;
 }
-#img{
+#fontawesome1-2
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#fontawesome1-3
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#fontawesome1-4
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#img1-1{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 45px;   
+}
+#img1-2{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 45px;   
+}
+#img1-3{
     color:rgba(243, 205, 36,.6); 
     font-size: 45px;   
 }
