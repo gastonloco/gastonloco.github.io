@@ -9,7 +9,7 @@ body
 *
     {
         box-sizing: border-box;
-        margin: 0;
+        margin: 1px;
         padding: 0;
     }
 .encabezado
@@ -79,12 +79,61 @@ a:hover
     {
     color: #fff;
     }
+.formulario h1
+    {
+        text-align: center;
+        color:rgb(243, 205, 36);
+        font-size: 25px;
+    }
 h1
     {
         text-align: center;
         color:rgb(243, 205, 36);
         font-size: 25px;
     }
+footer h3
+{
+    text-align: center;
+    color:rgba(245, 143, 10,.6);  
+    font-size: 15px;
+    text-align:right;
+}
+#fontawesome1-1
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#fontawesome1-2
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#fontawesome1-3
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#fontawesome1-4
+{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+#img1-1{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 45px;   
+}
+#img1-2{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 45px;   
+}
+#img1-3{
+    color:rgba(243, 205, 36,.6); 
+    font-size: 45px;   
+}
 imput[type="text"],
 imput[type="password"]
     {
@@ -117,10 +166,49 @@ imput[type="password"]
         border-radius: 5px;
         cursor: pointer;
     }
+
+.botonimg
+    {
+        border: none;
+        width: 50%;
+        color: white;
+        font-size: 20px;
+        background: rgba(245, 143, 10,.6);
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+.botonimg:hover
+    {
+        color: rgb(0, 0, 0);
+        background: rgba(255, 255, 255, 0.6);
+    }
 .button:hover
     {
         color: rgb(0, 0, 0);
         background: rgba(255, 255, 255, 0.6);
+    }
+.botondesc
+    {
+        border: none;
+        width: 20%;
+        color: white;
+        font-size: 20px;
+        background: rgba(245, 143, 10,.6);
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        
+    }
+    .indexmain
+    {
+        text-align: center;
+    }
+.botondesc:hover
+{
+        color: rgb(0, 0, 0);
+        background: rgba(255, 255, 255, 0.6); 
     }
 p
     {
@@ -175,6 +263,97 @@ p
         display: flex; /* esto hace que deje de ser en block*/
         align-items: center;
         
+    }
+
+    main h1
+    {
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-size: 50px;
+    }
+    main h3{
+        color: rgb(255, 255, 255); 
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        /* font-size: 30px; */
+    }
+    .contenedor-mail-all{
+        width: 100%;
+        max-width: 1281px; /* es el ancho del contenedor*/
+        margin: auto;
+        /* para que siempre esta centrado */
+        
+    }
+    .contenedor-mail
+    {
+        justify-content: space-between;
+        display: flex; /* esto hace que deje de ser en block*/
+        align-items: center;
+        
+        
+    }
+    .columna1-mail
+    {
+        background: rgba(0,0,0,.6);
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        border-radius: 6px;
+        
+    }
+    .columna2-mail
+    {
+        background: rgba(0,0,0,.6);
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        border-radius: 6px;
+        
+    }
+    .columna3-mail
+    {
+        background: rgba(0,0,0,.6);
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        border-radius: 6px;
+    }
+    .columna1-mail h3
+    {
+        color: rgb(255, 255, 255); 
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columna2-mail h3
+    {
+        color: rgb(255, 255, 255); 
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columna3-mail h3
+    {
+        color: rgb(255, 255, 255); 
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columna1-mail p
+    {
+        color: rgb(255, 255, 255); 
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columna2-mail p
+    {
+        color: rgb(255, 255, 255); 
+        margin-top: 20px;
+        margin-bottom: 30px; 
+    }
+    .columna3-mail p
+    {
+        color: rgb(255, 255, 255);  
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
     .columna1
     {
