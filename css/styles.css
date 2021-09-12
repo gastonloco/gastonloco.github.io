@@ -79,6 +79,12 @@ a:hover
     {
     color: #fff;
     }
+.formulario h1
+    {
+        text-align: center;
+        color:rgb(243, 205, 36);
+        font-size: 25px;
+    }
 h1
     {
         text-align: center;
