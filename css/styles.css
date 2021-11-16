@@ -1,453 +1,230 @@
-body
-    {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin: 0;
-        background: url(../img/fondo.jpg);
-        background-size: cover;
-        background-attachment: fixed;/*dejo la imagen fija*/   
-    }
-*
-    {
-        box-sizing: border-box;
-        margin: 1px;
-        padding: 0;
-    }
-    .Mario
-    {
-        display: flex;
-        justify-content: space-around;
-        align-items: center; 
-    }
-.encabezado
-    {
-        background: rgba(0,0,0,.6);
-       
-    }
-.encabezado .menu
-    {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
- 
-    }
-.encabezado .menu ul
-    {
-        list-style: none; /*sacar los puntos de las viñetas*/
-        display: flex;/* deja uno al lado del otro en forma horizontal*/
-        justify-content: space-between;
-    }
-.encabezado .menu ul li ul 
-    {
-        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
-        flex-direction: column;/* deja en forma vertical los sub item*/
-        position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgb(243, 205, 36);
-        display: none; /*hago desaparecer el sub item*/
-    }
-.encabezado .menu ul li:hover >ul
-    { /* cada vez que pase el curso por el padre
-                                        aparezaca el hijo*/
-        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
-        flex-direction: column;/* deja en forma vertical los sub item*/
-        position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgba(245, 143, 10,.6);   
-    }
-.encabezado .menu ul li ul li
-    {
-        width: 180px; /* hacemos crecer el ancho de los sub item*/
-    }
-a
-    {
-        text-decoration: none; /*Sacar el subrrallado de las etiquetas*/
-        font-size: 20px;
-        color: rgb(243, 205, 36);
-        padding: 12px 20px;
-        display: block; /*es para que no se superpongan los sub item*/
-    }
-a:hover
-    {
-        color: #fff;
-    }
-.contenedor
-    {
-        width: 100%;
-        padding: 15px;  
-    }
-.formulario
-    {
-        background: rgba(0,0,0,.6);
-        margin-top: 150px;
-        padding: 3px;
-        text-align: center; /*centro los txtbox */
-    }
-textarea{
-    background-color: rgba(245, 143, 10,.6);
-}  
-.textarea{
-    color: #fff;
-    font-size: 14px;
-}   
-.formulario2
-h1
-    {
-        text-align: center;
-        color:rgb(243, 205, 36);
-        font-size: 25px;
-    }
-.formulario3    
-    {
-
-        margin-top: 0px;
-        padding: 50px;
-        text-align: left; /*coloco a la derecha los cuadro de texto */
-        color: #fff;
-    }    
-.etiquetas
-    {
-        color:rgb(243, 205, 36);
-        font-size: 17px;
-        padding: 30px;
-        align-content: flex-start;
-        position: relative;
-
-    }    
-.formulario p
-    {
-    color: #fff;
-    }
-.formulario h1
-    {
-        text-align: center;
-        color:rgb(243, 205, 36);
-        font-size: 25px;
-    }
-h1
-    {
-        text-align: center;
-        color:rgb(243, 205, 36);
-        font-size: 25px;
-    }
-footer h3
-{
+body {
+background-color: white;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title {
+    color: #FA0050;
     text-align: center;
-    color:rgba(245, 143, 10,.6);  
-    font-size: 15px;
-    text-align:right;
 }
-#fontawesome1-1
-{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 25px;
-    padding-right: 10px;
+.logo {
+    width: 60px;
+    padding: 12px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
-#fontawesome1-2
-{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 25px;
-    padding-right: 10px;
+.menu {
+	list-style: none;
+	display: none;
 }
-#fontawesome1-3
-{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 25px;
-    padding-right: 10px;
+.menu a {
+    color: #FA0050;
+    text-decoration: none;
+    margin-right: 40px;
+	transition: all 0.5s;
+	padding: 8px;
 }
-#fontawesome1-4
-{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 25px;
-    padding-right: 10px;
-}
-#img1-1{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 45px;   
-}
-#img1-2{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 45px;   
-}
-#img1-3{
-    color:rgba(243, 205, 36,.6); 
-    font-size: 45px;   
-}
-imput[type="text"],
-imput[type="password"]
-    {
-        font-size: 20px;
-        width: 82%;
-        padding: 10px;
-        border: none;
-        
-    }
-.contenedor1
-    {
-        margin-bottom: 15px;
-    }
-.icono
-    {
-        min-width: 50px;
-        text-align: center;
-        color:rgba(245, 143, 10,.6);   
-    }
-.button
-    {
-        border: none;
-        width: 100%;
-        color: white;
-        font-size: 20px;
-        background: rgba(245, 143, 10,.6);
-        padding: 15px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-.button2
-    {
-        border: none;
-        width: 20%;
-        color: white;
-        font-size: 20px;
-        background: rgba(245, 143, 10,.6);
-        padding: 15px 20px;
-        border-radius: 5px;
-        cursor: pointer;        
-    } 
-.button2:hover
-    {
-        color: rgb(0, 0, 0);
-        background: rgba(255, 255, 255, 0.6);
-    }   
-.botonimg
-    {
-        border: none;
-        width: 50%;
-        color: white;
-        font-size: 20px;
-        background: rgba(245, 143, 10,.6);
-        padding: 15px 20px;
-        border-radius: 5px;
-        cursor: pointer;     
-    }  
-.botonimg:hover
-    {
-        color: rgb(0, 0, 0);
-        background: rgba(255, 255, 255, 0.6);
-    }
-.button:hover
-    {
-        color: rgb(0, 0, 0);
-        background: rgba(255, 255, 255, 0.6);
-    }
-.botondesc
-    {
-        border: none;
-        width: 20%;
-        color: white;
-        font-size: 20px;
-        background: rgba(245, 143, 10,.6);
-        padding: 15px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        
-        
-    }
-    .indexmain
-    {
-        text-align: center;
-    }
-.botondesc:hover
-{
-        color: rgb(0, 0, 0);
-        background: rgba(255, 255, 255, 0.6); 
-    }
-p
-    {
-        text-align: center;
-    }
-.link
-    {
-        text-decoration: none;
-        color: rgb(243, 205, 36);
-        font-weight: 600;
-    }
-.link:hover
-    {
-        
-        color:rgb(255, 255, 255);
 
-    }
-.cuadrado
-    {
-        border-radius: 5px; 
-        color:rgb(255, 255, 255);  
-        background: rgba(245, 143, 10,.6);
-        border: none;   /*  elimino los bordes visibles del textbox*/
-        padding: 10px; /*le damos el ancho de los textbox*/
-    }
-@media(min-width:768px)
-    {
-        .formulario
-        {
-        margin: auto;
-        width: 500px;
-        margin-top: 100px;
-        border-radius: 3px;
-        }
-    }
+.menu a:hover {
+	color: white;
+	background-color: #FA0050;
+}
 
-    /*******************footer*****************/
-    footer{
-        background: rgba(0,0,0,.6);
-        width: 100%;
+.menu.open, .menu-productos {
+	display: block;
+}
 
-    }
-    .contenedor-all{
-        width: 100%;
-        max-width: 1281px; /* es el ancho del contenedor*/
-        margin: auto;
-        /* para que siempre esta centrado */
-    }
-    .contenedor-footer
-    {
-        justify-content: space-between;
-        display: flex; /* esto hace que deje de ser en block*/
-        align-items: center;
-        
-    }
 
-    main h1
-    {
-        text-align: center;
-        color:rgb(255, 255, 255);
-        font-size: 50px;
-    }
-    main h3{
-        color: rgb(255, 255, 255); 
-        margin-top: 20px;
-        margin-bottom: 30px;
-        text-align: center;
-        /* font-size: 30px; */
-    }
-    .contenedor-mail-all{
-        width: 100%;
-        max-width: 1281px; /* es el ancho del contenedor*/
-        margin: auto;
-        /* para que siempre esta centrado */
-        
-    }
-    .contenedor-mail
-    {
-        justify-content: space-between;
-        display: flex; /* esto hace que deje de ser en block*/
-        align-items: center;
-        
-        
-    }
-    .columna1-mail
-    {
-        background: rgba(0,0,0,.6);
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-        border-radius: 6px;
-        
-    }
-    .columna2-mail
-    {
-        background: rgba(0,0,0,.6);
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-        border-radius: 6px;
-        
-    }
-    .columna3-mail
-    {
-        background: rgba(0,0,0,.6);
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-        border-radius: 6px;
-    }
-    .columna1-mail h3
-    {
-        color: rgb(255, 255, 255); 
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .columna2-mail h3
-    {
-        color: rgb(255, 255, 255); 
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .columna3-mail h3
-    {
-        color: rgb(255, 255, 255); 
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .columna1-mail p
-    {
-        color: rgb(255, 255, 255); 
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .columna2-mail p
-    {
-        color: rgb(255, 255, 255); 
-        margin-top: 20px;
-        margin-bottom: 30px; 
-    }
-    .columna3-mail p
-    {
-        color: rgb(255, 255, 255);  
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .columna1
-    {
-       max-width: 427px; /* divido en tres */
-    }
-    .columna1 p
-    {
-       color: rgba(245, 143, 10,.6);
-    }
-    .columna2
-    {
-       max-width: 427px; /* divido en tres */
-    }
-    .columna2 label
-    {
-        color: rgba(245, 143, 10,.6);
-    }
-    .columna3 
-    {
-       max-width: 427px; /* divido en tres */
-    }
-    .columna3 p
-    {
-        color: rgba(245, 143, 10,.6);
-    }
-    .conteiner-footer2{
-        display: flex; /* esto hace que deje de ser en block*/
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .copyright{
-        max-width: 427px; /* divido en tres */
-        color: rgba(245, 143, 10,.6);
-    }
+@media screen and (min-width: 768px) {
+	.menu {
+		display: flex;
+		justify-content: center;
+		margin-top: 55px;
+	}
+	.menu-button {
+		display: none;
+	}
+}
 
-    .information{
-        max-width: 854px; /* divido en tres */
-        display: flex; /* esto hace que deje de ser en block*/
-    }
-    .logo{
-        display: flex; /* esto hace que deje de ser en block*/
-        margin-top: 20px;
-    }
-    .logo img{
-        width: 36px;
-        height: 36px;
-    }
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.usuario-form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.btn {
+    margin-top: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #FA0050;
+    color: white;
+    padding: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+   
+}
+.check-in {
+text-align: center;
+margin-top: 50px;
+}
+.in {
+    text-decoration: none;
+}
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+
+
+.img_ajuste{
+   width: 50%;
+}
+#papasrusticas {
+	background-color: #FA0050;;
+	height: 150px;
+	width: 150px;
+	margin-left: 85px;
+	float: left;
+	background-image: url(images/papasrusticas.jpg);
+	background-size: cover;
+}
+.img_ajuste2 {
+	background-color: #FA0050;;
+	height: 150px;
+	width: 150px;
+	margin-left: 85px;
+	float: left;
+	background-image: url(image/hamburs.jpg);
+	background-size: cover;
+}
+.img_ajuste3 {
+   width: 50%;
+}
+
+*{
+	font-family: sans-serif;
+}
+h2{
+	font-family: sans-serif;
+}
+
+.fab{
+    width: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.social{
+    position: fixed;
+    left: -40px;
+    top: 250px;
+}
+.social ul{
+    list-style: none;
+}
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.1s ease;
+}
+.fa-facebook-f{
+    background: #3b5998;
+}
+.fa-twitter{
+    background: #00abf0;
+}
+.fa-get-pocket{
+    background: #ae181f;
+}
+.fa-facebook-messenger{
+    background: #0084ff;
+}
+.fa-whatsapp{
+    background: #25d366;
+}
+.fa-google-plus-g{
+    background: #d95232;
+}
+.social a:hover{
+    padding: 10px 25px;
+}
+.paragraph {
+	color: #FA0050;
+	text-align: center;
+}
+.somos {
+	color: #FA0050;
+	text-align: center;
+}
+.postres-title {
+	color: #FA0050;
+	text-align: center;
+	margin-top: 32px;
+}
+.producto {
+	width: 100%;
+}
+
+.footer-style {
+	color: #FA0050;
+	text-align: center;
+}
+
+@keyframes link-destacado {
+	from {
+		color: #FA0050;
+	}
+	to {
+		color:#0084ff;
+	}
+}
+
+@keyframes flecha-anim {
+	from {
+		margin-left: 4px;
+	}
+	to {
+		margin-left: 0;
+	}
+}
+
+.link-registro {
+	animation-name: link-destacado;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.flecha {
+	animation-name: flecha-anim;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
